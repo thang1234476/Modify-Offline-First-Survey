@@ -3,44 +3,52 @@
 
 <head>
   <meta charset="UTF-8" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VKU Campus Quick Guide</title>
-  <link rel="stylesheet" href="/style.css" />
+
+  <title>VKU Field Survey</title>
+
   <link rel="manifest" href="/manifest.json" />
+
   <meta name="theme-color" content="#0f766e" />
+
+  <link rel="stylesheet" href="/style.css" />
 </head>
 
 <body>
   <main class="app">
-    <header class="hero">
-      <img src="/icons/icon-192.png" alt="VKU Campus Quick Guide" class="app-logo" />
+    <header>
+      <p class="eyebrow">
+        WEEK 4 — OFFLINE-FIRST DEMO
+      </p>
 
-      <div>
-        <p class="eyebrow">WEEK 3 — PWA DEMO</p>
-        <h1>VKU Campus Quick Guide</h1>
-        <p>Một Web App nhỏ để quan sát Manifest, Service Worker và Cache API.</p>
-      </div>
+      <h1>VKU Field Survey</h1>
+
+      <p id="network-status" class="status"></p>
     </header>
 
-    <section class="cards">
-      <article class="card">
-        <h2>Phòng học</h2>
-        <p>Tra cứu nhanh thông tin khu giảng đường.</p>
-      </article>
-      <article class="card">
-        <h2>Thư viện</h2>
-        <p>Thông tin cơ bản về khu vực học tập và thư viện.</p>
-      </article>
-      <article class="card">
-        <h2>Hỗ trợ</h2>
-        <p>Thông tin liên hệ khi cần hỗ trợ.</p>
-      </article>
+    <section class="panel">
+      <h2 id="form-title"></h2>
+
+      <form id="survey-form"></form>
     </section>
 
-    <p id="network-status" class="status"></p>
+    <section class="panel">
+      <div class="section-header">
+        <h2>
+          Submissions trên thiết bị
+        </h2>
+
+        <button id="sync-button" type="button">
+          Sync pending
+        </button>
+      </div>
+      <p id="sync-counter"></p>
+      <div id="submission-list"></div>
+    </section>
   </main>
 
-  <script src="/app.js"></script>
+  <script type="module" src="/app.js"></script>
 </body>
 
 </html>
