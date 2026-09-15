@@ -26,3 +26,4 @@ campus.png không hiển thị vì file này chưa được precache.
 
 Khi trình duyệt yêu cầu campus.png ở trạng thái Offline, Service Worker không tìm thấy file này trong cache và cũng không thể lấy file từ network. Vì vậy, hình ảnh không thể tải và bị mất.
 
+# Modify-Offline-First-Survey
